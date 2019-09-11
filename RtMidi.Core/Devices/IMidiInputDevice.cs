@@ -1,5 +1,9 @@
 ﻿using RtMidi.Core.Devices.Nrpn;
 using RtMidi.Core.Messages;
+﻿using RtMidi.Core.Messages;
+using System;
+using RtMidi.Core.Devices.Nrpn;
+using RtMidi.Core.Unmanaged.Devices;
 
 namespace RtMidi.Core.Devices
 {
@@ -75,7 +79,8 @@ namespace RtMidi.Core.Devices
         /// Tune Request event
         /// </summary>
         event TuneRequestHandler TuneRequest;
-    }
+        IRtMidiInputDevice InputDevice { get;  }
+	}
 
     public delegate void NoteOffMessageHandler(IMidiInputDevice sender, in NoteOffMessage msg);
 

@@ -4,7 +4,7 @@ namespace RtMidi.Core.Unmanaged.Devices
     /// <summary>
     /// RtMidi Input device
     /// </summary>
-    internal interface IRtMidiInputDevice : IRtMidiDevice
+    public interface IRtMidiInputDevice : IRtMidiDevice
     {
         /// <summary>
         /// MIDI message was received

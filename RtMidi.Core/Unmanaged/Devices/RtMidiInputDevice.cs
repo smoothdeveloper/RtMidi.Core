@@ -4,7 +4,7 @@ using Serilog;
 using System.Runtime.InteropServices;
 namespace RtMidi.Core.Unmanaged.Devices
 {
-    internal class RtMidiInputDevice : RtMidiDevice, IRtMidiInputDevice
+    public class RtMidiInputDevice : RtMidiDevice, IRtMidiInputDevice
     {
         /// <summary>
         /// Ensure delegate is not garbage collected (see https://stackoverflow.com/questions/6193711/call-has-been-made-on-garbage-collected-delegate-in-c)
@@ -28,7 +28,7 @@ namespace RtMidi.Core.Unmanaged.Devices
                 CheckForError(handle);
 
                 Log.Debug("Setting types to ignore");
-                RtMidiC.Input.IgnoreTypes(handle, false, true, true);
+                RtMidiC.Input.IgnoreTypes(handle, false, false, false);
                 CheckForError(handle);
 
                 Log.Debug("Setting input callback");

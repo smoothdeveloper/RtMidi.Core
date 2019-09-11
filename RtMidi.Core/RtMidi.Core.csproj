@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <LangVersion>7.2</LangVersion>
     <PackageId>RtMidi.Core</PackageId>
-    <PackageVersion>1.0.39-alpha-3</PackageVersion>
+    <PackageVersion>1.0.59-alpha-3</PackageVersion>
     <Authors>Michael Dahl</Authors>
     <Description>Cross-platform MIDI library for .Net Standard built on top of RtMIdi with included support for Windows x64 and macOS</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>

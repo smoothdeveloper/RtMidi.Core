@@ -40,6 +40,7 @@ namespace RtMidi.Core.Devices
         public event SongPositionPointerHandler SongPositionPointer;
         public event SongSelectHandler SongSelect;
         public event TuneRequestHandler TuneRequest;
+        public IRtMidiInputDevice InputDevice => _inputDevice;
 
         private void RtMidiInputDevice_Message(object sender, byte[] message)
         {

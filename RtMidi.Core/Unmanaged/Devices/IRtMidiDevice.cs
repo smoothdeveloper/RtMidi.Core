@@ -1,7 +1,7 @@
 ﻿using System;
 namespace RtMidi.Core.Unmanaged.Devices
 {
-    internal interface IRtMidiDevice : IDisposable
+    public interface IRtMidiDevice : IDisposable
     {
         /// <summary>
         /// Whether or not the device is open

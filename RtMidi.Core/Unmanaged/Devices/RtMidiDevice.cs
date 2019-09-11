@@ -8,7 +8,7 @@ namespace RtMidi.Core.Unmanaged.Devices
     /// <summary>
     /// Abstract RtMidi device base class
     /// </summary>
-    internal abstract class RtMidiDevice : IRtMidiDevice
+    public abstract class RtMidiDevice : IRtMidiDevice
     {
         private static readonly ILogger Log = Serilog.Log.ForContext<RtMidiDevice>();
 
